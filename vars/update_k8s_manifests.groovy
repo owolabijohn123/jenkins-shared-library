@@ -24,7 +24,7 @@ def call(Map config) {
             git add ${config.manifestsPath}/*.yaml
             git commit -m "Update image tag to ${config.imageTag}" || echo "No changes to commit"
 
-            git push https://${GIT_USER}:${GIT_PASS}@github.com/yinkaowolabi091-web/e-commerce-app-devops-project.git HEAD:master
+            git push https://${GIT_USER}:${GIT_PASS}@https://github.com/owolabijohn123/ecommerce-project.git HEAD:master
         """
     }
 }
